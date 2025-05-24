@@ -6,6 +6,7 @@ This project builds a supervised learning pipeline to predict whether a customer
 
 ## Project Structure
 
+```txt
 tourism-purchase-prediction/
 |-- data/
 │  |-- README.md # Context for absent data
@@ -35,7 +36,7 @@ tourism-purchase-prediction/
 │ --- pr_curve_dt.png
 |-- README.md # You're here
 |__ requirements.txt # Dependencies
-
+```
 ---
 
 ## Problem Overview
