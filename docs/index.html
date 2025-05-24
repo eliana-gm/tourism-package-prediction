@@ -9,14 +9,14 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f5f7fa;
+            background-color: #afccf7;
             color: #333;
         }
         .container {
             max-width: 960px;
             margin: auto;
             padding: 2rem;
-            background-color: #fff;
+            background-color: #afccf7;
         }
         h1, h2, h3 {
             color: #002244;
@@ -46,6 +46,13 @@
         a {
             color: #0066cc;
         }
+        .row {
+            display: flex;
+        }
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
@@ -68,12 +75,21 @@
             <li>Basic and standard packages showed the highest conversion rates</li>
             <li>Executives and younger customers tend to have higher conversion likelihood</li>
         </ul>
-        <img src="images/age_distribution.png" alt="Age Distribution">
-        <img src="images/monthly_income.png" alt="Monthly Income Distribution">
-        <img src="/images/passport_vs_purchase.png" alt="Passport vs Purchase Rate">
+
+        <div class="row">
+            <div class="column">
+                <img src="display/age_distribution - display.png" alt="Age Distribution" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="display/monthly_income - display.png" alt="Monthly Income Distribution" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="display/passport_vs_prod_taken - display.png" alt="Passport vs Purchase Rate" style="width:100%">
+            </div>
+        </div>
 
         <h2>Models & Performance</h2>
-        <p>We evaluated Logistic Regression, SVM, Decision Tree, Random Forest, and SVD. Here are the final tuned metrics for our best-performing model:</p>
+        <p>I evaluated Logistic Regression, SVM, Decision Tree, Random Forest, and SVD. Here are the final tuned metrics for my best-performing model:</p>
 
         <table>
             <thead>
@@ -87,8 +103,15 @@
             </tbody>
         </table>
 
-        <img src="/images/feature_importance.png" alt="Feature Importance">
-        <p>Most important features: Monthly Income, Age, Number of Trips, Designation</p>
+        <p>Below is feature importance from the tuned Decision Tree (for interpretability) and the Random Forest (for more robust, aggregated insights). Both agree on key features: Monthly Income, Age, and Number of Trips.</p>
+        <div class="row">
+            <div class="column">
+                <img src="display/feature_importance_dt - display.png" alt="Decision Tree modeled feature importance" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="display/feature_importance_rf - display.png" alt="Random Forest modeled feature importance" style="width:100%">
+            </div>
+        </div>
 
         <h2>Explore the Full Project</h2>
         <p>All code, data, and reports are available in the full <a href="https://github.com/elianagm/tourism-purchase-prediction" target="_blank">GitHub repository</a>.</p>
