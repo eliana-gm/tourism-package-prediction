@@ -8,34 +8,35 @@ This project builds a supervised learning pipeline to predict whether a customer
 
 ```txt
 tourism-purchase-prediction/
-|-- data/
-│  |-- README.md # Context for absent data
-|-- notebooks/
-│-- tourism-purchase-prediction.ipynb # Full EDA and model walkthrough
-| -- docs/
-| --- index.html # GitHub pages design
-|-- scripts/
-| --- model_pipeline.py # Clean modeling pipeline
-│ --- utils.py # Helper plotting functions
-|-- report/
-| --- summary.md # EDA + insights + modeling reflection
-|-- results/
-| --- final_metrics.txt # Final model evaluation report
-|-- images/
-| --- age_distribution.png # Distributions, barplots, and PR curves
-| --- income_distribution.png
-| --- trips_distribution.png
-| --- marital_status_vs_target.png
-│ --- productpitched_vs_target.png
-│ --- passport_vs_target.png
-│ --- designation_vs_target.png
-│ --- feature_importance_dt.png
-│ --- feature_importance_rf.png
-│ --- pr_curve_logreg.png
-│ --- pr_curve_svm_rbf.png
-│ --- pr_curve_dt.png
-|-- README.md # You're here
-|__ requirements.txt # Dependencies
+├── data/
+│   └── README.md                        # Context for absent data
+├── notebooks/
+│   └── tourism-purchase-prediction.ipynb  # Full EDA and model walkthrough
+├── docs/
+│   └── index.html                       # GitHub Pages visual summary
+├── scripts/
+│   ├── model_pipeline.py               # Clean modeling pipeline
+│   └── utils.py                        # Helper plotting functions
+├── report/
+│   └── summary.md                      # EDA + insights + modeling reflection
+├── results/
+│   └── final_metrics.txt              # Final model evaluation report
+├── images/
+│   ├── age_distribution.png
+│   ├── income_distribution.png
+│   ├── trips_distribution.png
+│   ├── marital_status_vs_target.png
+│   ├── productpitched_vs_target.png
+│   ├── passport_vs_target.png
+│   ├── designation_vs_target.png
+│   ├── feature_importance_dt.png
+│   ├── feature_importance_rf.png
+│   ├── pr_curve_logreg.png
+│   ├── pr_curve_svm_rbf.png
+│   └── pr_curve_dt.png
+├── README.md                           # You're here
+└── requirements.txt                    # Dependencies
+
 ```
 ---
 
