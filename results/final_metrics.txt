@@ -1,0 +1,52 @@
+Model Evaluation Summary
+=========================
+
+Dataset: tourism-purchase-prediction
+Objective: Predict likelihood of customer purchasing a travel package
+
+Evaluated Models' Metrics:
+------------------
+
+1. Logistic Regression
+   - Threshold: 0.25
+   - Test Set Metrics:
+     - Accuracy: 0.78
+     - Precision (Class 1): 0.45
+     - Recall (Class 1): 0.65
+     - F1 Score (Class 1): 0.53
+
+2. Support Vector Machine (Linear Kernel)
+   - Threshold: 0.25
+   - Test Set Metrics:
+     - Accuracy: 0.78
+     - Precision (Class 1): 0.44
+     - Recall (Class 1): 0.62
+     - F1 Score (Class 1): 0.51
+
+3. Support Vector Machine (RBF Kernel)
+   - Threshold: 0.17
+   - Test Set Metrics:
+     - Accuracy: 0.84
+     - Precision (Class 1): 0.56
+     - Recall (Class 1): 0.68
+     - F1 Score (Class 1): 0.62
+
+4. Decision Tree (Tuned via GridSearchCV)
+   - Test Set Metrics:
+     - Accuracy: 0.85
+     - Precision (Class 1): 0.61
+     - Recall (Class 1): 0.58
+     - F1 Score (Class 1): 0.59
+
+5. Random Forest (Default Parameters)
+   - Test Set Metrics:
+     - Accuracy: 0.89
+     - Precision (Class 1): 0.91
+     - Recall (Class 1): 0.47
+     - F1 Score (Class 1): 0.62
+
+Conclusion:
+-----------
+- The SVM model with RBF kernel achieved the best balance between recall and precision, making it the most effective model for business use.
+- Random Forest (RF) achieved the highest precision but had relatively lower recall.
+- Decision Tree and Logistic Regression models were reasonably effective after threshold tuning.

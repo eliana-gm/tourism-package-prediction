@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourism Package Purchase Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 2rem;
+            background-color: #fff;
+        }
+        h1, h2, h3 {
+            color: #002244;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            padding: 0.6rem;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        .footer {
+            margin-top: 4rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ccc;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        a {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tourism Package Purchase Prediction</h1>
+        <p>This project leverages data science to predict whether a customer is likely to purchase a travel package, empowering tourism businesses with actionable insights for marketing and product development.</p>
+
+        <h2>Executive Summary</h2>
+        <ul>
+            <li>Target: Predict binary outcome - Will the customer purchase the package?</li>
+            <li>Dataset: 20 features including demographics, behavior, and preferences</li>
+            <li>Goal: Boost marketing ROI by identifying potential buyers in advance</li>
+        </ul>
+
+        <h2>Business Insights</h2>
+        <p>Exploratory data analysis revealed the following:</p>
+        <ul>
+            <li>Married customers are less likely to convert than single/unmarried</li>
+            <li>Higher income and passport ownership strongly correlate with purchases</li>
+            <li>Basic and standard packages showed the highest conversion rates</li>
+            <li>Executives and younger customers tend to have higher conversion likelihood</li>
+        </ul>
+        <img src="../images/age_distribution.png" alt="Age Distribution">
+        <img src="../images/monthly_income.png" alt="Monthly Income Distribution">
+        <img src="../images/passport_vs_purchase.png" alt="Passport vs Purchase Rate">
+
+        <h2>Models & Performance</h2>
+        <p>We evaluated Logistic Regression, SVM, Decision Tree, Random Forest, and SVD. Here are the final tuned metrics for our best-performing model:</p>
+
+        <table>
+            <thead>
+                <tr><th>Model</th><th>Precision</th><th>Recall</th><th>F1 Score</th><th>RMSE</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>SVM (RBF Kernel)</td><td>0.54</td><td>0.69</td><td>0.61</td><td>~</td></tr>
+                <tr><td>Logistic Regression</td><td>0.47</td><td>0.67</td><td>0.55</td><td>~</td></tr>
+                <tr><td>Random Forest</td><td>0.58</td><td>0.47</td><td>0.52</td><td>~</td></tr>
+                <tr><td>Decision Tree (Tuned)</td><td>0.52</td><td>0.62</td><td>0.57</td><td>~</td></tr>
+            </tbody>
+        </table>
+
+        <img src="assets/feature_importance.png" alt="Feature Importance">
+        <p>Most important features: Monthly Income, Age, Number of Trips, Designation</p>
+
+        <h2>Explore the Full Project</h2>
+        <p>All code, data, and reports are available in the full <a href="https://github.com/elianagm/tourism-purchase-prediction" target="_blank">GitHub repository</a>.</p>
+
+        <h2>How to Use</h2>
+        <pre><code>
+pip install -r requirements.txt
+python scripts/model_pipeline.py
+        </code></pre>
+
+        <div class="footer">
+            Created by Eliana Gabriela Matos Polanco – <a href="mailto:elianagmpolanco@gmail.com">elianagmpolanco@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>
